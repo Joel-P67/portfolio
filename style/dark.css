@@ -1,0 +1,110 @@
+:root {
+  --neon-color: #0ff;
+  --neon-shadow:
+    0 0 1px var(--neon-color),
+    0 0 2px var(--neon-color),
+    0 0 4px var(--neon-color),
+    0 0 6px var(--neon-color);
+}
+
+/* ----- Couleurs thème sombre ----- */
+body {
+  background-color: #111;
+  color: #eee;
+}
+
+.burger,
+.logo-text,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--neon-color);
+  text-shadow: var(--neon-shadow);
+}
+
+/* ----- Header : Navbar + Menu ----- */
+nav {
+  border-bottom: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+}
+
+#themeButton {
+  background-color: #111;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+  color: var(--neon-color);
+  text-shadow: var(--neon-shadow);
+}
+
+.options {
+  background-color: #111;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+  color: #eee;
+}
+
+.option:hover {
+  color: var(--neon-color);
+  text-shadow: var(--neon-shadow);
+}
+
+/* Menu */
+.menu {
+  background-color: #111;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu a {
+  color: #eee;
+}
+
+.menu a:hover {
+  color: var(--neon-color);
+  text-shadow: var(--neon-shadow);
+}
+
+/* ----- Corp de la Page ----- */
+.section {
+  background-color: #111;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+}
+
+/* Titre posé sur la ligne */
+.section-title {
+  background-color: #111;
+  color: var(--neon-color);
+  text-shadow: var(--neon-shadow);
+}
+
+/* Compétences techniques */
+.skill-block {
+  background-color: #111;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+}
+
+/* Mes Projets */
+.project-card {
+  background-color: #111;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+}
+
+.project-hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ----- Footer ----- */
+footer {
+  background-color: #111;
+  color: #ccc;
+  border-top: 1px solid var(--neon-color);
+}
+
+.footer-links a {
+  color: var(--neon-color);
+}
