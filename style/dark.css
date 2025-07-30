@@ -98,13 +98,13 @@ nav {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.hover-links .btn {
+.project-hover-links .btn-project {
   background-color: #ffffffcc;
   color: #000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.hover-links .btn:hover {
+.project-hover-links .btn-projets:hover {
   background-color: #fff;
 }
 
