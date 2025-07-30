@@ -182,9 +182,11 @@ main {
 
 .hover-links .btn {
   display: block;
-  width: calc(100% - 10px);
-  margin: 0 5px;
-  padding: 0.5rem 0;
+  width: calc(100% - 20px);
+  /* marge de 10px à gauche et droite */
+  margin: 0 10px;
+  padding: 0.5rem 1rem;
+  /* padding horizontal ajouté */
   border: none;
   border-radius: 6px;
   font-weight: bold;
