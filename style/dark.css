@@ -32,7 +32,7 @@ nav {
 }
 
 #themeButton {
-  background-color: #111;
+  background-color: #010204;
   border: 1px solid var(--neon-color);
   box-shadow: var(--neon-shadow);
   color: var(--neon-color);
@@ -40,7 +40,7 @@ nav {
 }
 
 .options {
-  background-color: #111;
+  background-color: #010204;
   border: 1px solid var(--neon-color);
   box-shadow: var(--neon-shadow);
   color: #eee;
@@ -53,7 +53,7 @@ nav {
 
 /* Menu */
 .menu {
-  background-color: #111;
+  background-color: #010204;
   border-bottom: 1px solid #ccc;
 }
 
@@ -68,28 +68,28 @@ nav {
 
 /* ----- Corp de la Page ----- */
 .section {
-  background-color: #111;
+  background-color: #010204;
   border: 1px solid var(--neon-color);
   box-shadow: var(--neon-shadow);
 }
 
 /* Titre posé sur la ligne */
 .section-title {
-  background-color: #111;
+  background-color: #010204;
   color: var(--neon-color);
   text-shadow: var(--neon-shadow);
 }
 
 /* Compétences techniques */
 .skill-block {
-  background-color: #111;
+  background-color: #010204;
   border: 1px solid var(--neon-color);
   box-shadow: var(--neon-shadow);
 }
 
 /* Mes Projets */
 .project-card {
-  background-color: #111;
+  background-color: #010204;
   border: 1px solid var(--neon-color);
   box-shadow: var(--neon-shadow);
 }
@@ -117,7 +117,7 @@ nav {
 
 /* ----- Footer ----- */
 footer {
-  background-color: #111;
+  background-color: #010204;
   color: #ccc;
   border-top: 1px solid var(--neon-color);
 }
