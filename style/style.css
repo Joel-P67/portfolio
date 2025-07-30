@@ -240,20 +240,18 @@ main {
 }
 
 /* Compétences */
+/* Grand écran : 50/50 */
 .savoir-faire,
 .savoir-etre {
-  flex: 1 1 50%;
-  max-width: 50%;
+  width: 50%;
 }
 
+/* Petit écran : 100% */
 @media (max-width: 550px) {
-  .savoir-faire {
+
+  .savoir-faire,
+  .savoir-etre {
     width: 100%;
     text-align: center;
-  }
-
-  .savoir-etre {
-    margin: 0;
-    display: inline-block;
   }
 }
