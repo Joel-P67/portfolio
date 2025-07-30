@@ -181,16 +181,19 @@ main {
 }
 
 .hover-links .btn {
-  padding: 0.5rem 1.2rem;
+  display: block;
+  width: calc(100% - 10px);
+  margin: 0 5px;
+  padding: 0.5rem 0;
   border: none;
   border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.3s ease;
   cursor: pointer;
-  max-width: 80%;
   word-break: break-word;
   text-align: center;
+  box-sizing: border-box;
 }
 
 body,
