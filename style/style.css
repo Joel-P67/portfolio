@@ -239,13 +239,21 @@ main {
   }
 }
 
-/* Compétences  */
-.savoir-faire {
-  width: 250px;
+/* Compétences */
+.savoir-faire,
+.savoir-etre {
+  flex: 1 1 50%;
+  max-width: 50%;
 }
 
-.savoir-etre {
-  flex: 1;
+@media (max-width: 550px) {
+
+  .savoir-faire,
+  .savoir-etre {
+    flex: 1 1 100%;
+    max-width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 550px) {
