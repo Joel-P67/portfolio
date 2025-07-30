@@ -99,13 +99,20 @@ nav {
 }
 
 .project-hover-links .btn-project {
-  background-color: #ffffffcc;
-  color: #000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #eee;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
 }
 
 .project-hover-links .btn-project:hover {
-  background-color: #fff;
+  background-color: #000;
+  color: #eee;
+  box-shadow:
+    0 0 5px var(--neon-color),
+    0 0 10px var(--neon-color),
+    0 0 15px var(--neon-color),
+    0 0 20px var(--neon-color);
 }
 
 /* ----- Footer ----- */
