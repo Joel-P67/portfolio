@@ -238,3 +238,24 @@ main {
     display: inline-block;
   }
 }
+
+/* Compétences  */
+.savoir-faire {
+  width: 250px;
+}
+
+.savoir-etre {
+  flex: 1;
+}
+
+@media (max-width: 550px) {
+  .savoir-faire {
+    width: 100%;
+    text-align: center;
+  }
+
+  .savoir-etre {
+    margin: 0;
+    display: inline-block;
+  }
+}
