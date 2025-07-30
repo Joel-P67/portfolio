@@ -106,7 +106,7 @@ nav {
 }
 
 .project-hover-links .btn-project:hover {
-  background-color: #000;
+  background-color: #010204;
   color: #eee;
   box-shadow:
     0 0 5px var(--neon-color),
