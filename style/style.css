@@ -149,10 +149,13 @@ main {
   position: absolute;
   inset: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  border-radius: 8px;
+  z-index: 1;
 }
 
 .project-card:hover .project-hover {
@@ -160,14 +163,34 @@ main {
 }
 
 .project-hover img {
-  max-width: 100%;
-  border-radius: 4px;
-  transform: scale(0.95);
-  transition: transform 0.3s ease;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 8px;
 }
 
-.project-card:hover .project-hover img {
-  transform: scale(1);
+/* Conteneur pour les boutons */
+.hover-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.hover-links .btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  max-width: 80%;
+  word-break: break-word;
+  text-align: center;
 }
 
 body,
