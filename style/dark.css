@@ -7,14 +7,15 @@
     0 0 6px var(--neon-color);
 }
 
-/* ----- Couleurs thème sombre ----- */
+/* ---------------------------
+        Général
+--------------------------- */
+
 body {
   background-color: #010204;
   color: #eee;
 }
 
-.burger,
-.logo-text,
 h1,
 h2,
 h3,
@@ -34,10 +35,42 @@ a:hover {
   text-shadow: var(--neon-shadow);
 }
 
-/* ----- Header : Navbar + Menu ----- */
+.section {
+  background-color: #010204;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+}
+
+/* Titre posé sur la ligne */
+.section-title {
+  background-color: #010204;
+  color: var(--neon-color);
+  text-shadow: var(--neon-shadow);
+}
+
+.section img {
+  filter: drop-shadow(0 0 4px #000);
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.section img:hover {
+  opacity: 1;
+}
+
+/* ---------------------------
+        Header
+--------------------------- */
+
 nav {
   border-bottom: 1px solid var(--neon-color);
   box-shadow: var(--neon-shadow);
+}
+
+.burger,
+.logo-text {
+  color: var(--neon-color);
+  text-shadow: var(--neon-shadow);
 }
 
 #themeButton {
@@ -66,29 +99,9 @@ nav {
   border-bottom: 1px solid #ccc;
 }
 
-/* ----- Corp de la Page ----- */
-.section {
-  background-color: #010204;
-  border: 1px solid var(--neon-color);
-  box-shadow: var(--neon-shadow);
-}
-
-/* Titre posé sur la ligne */
-.section-title {
-  background-color: #010204;
-  color: var(--neon-color);
-  text-shadow: var(--neon-shadow);
-}
-
-.section img {
-  filter: drop-shadow(0 0 4px #000);
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
-}
-
-.section img:hover {
-  opacity: 1;
-}
+/* ---------------------------
+        Index
+--------------------------- */
 
 /* Compétences techniques */
 .skill-block {
@@ -125,7 +138,23 @@ nav {
     0 0 20px var(--neon-color);
 }
 
-/* ----- Footer ----- */
+/* ---------------------------
+        CV
+--------------------------- */
+
+/* Tableau CV */
+@media (max-width: 700px) {
+  .job-history tr {
+    background-color: #010204;
+    border: 1px solid var(--neon-color);
+    box-shadow: var(--neon-shadow);
+  }
+}
+
+/* ---------------------------
+        Footer
+--------------------------- */
+
 footer {
   background-color: #010204;
   color: #ccc;
