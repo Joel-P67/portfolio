@@ -25,6 +25,15 @@ h6 {
   text-shadow: var(--neon-shadow);
 }
 
+a {
+  color: #eee;
+}
+
+a:hover {
+  color: var(--neon-color);
+  text-shadow: var(--neon-shadow);
+}
+
 /* ----- Header : Navbar + Menu ----- */
 nav {
   border-bottom: 1px solid var(--neon-color);
@@ -55,15 +64,6 @@ nav {
 .menu {
   background-color: #010204;
   border-bottom: 1px solid #ccc;
-}
-
-.menu a {
-  color: #eee;
-}
-
-.menu a:hover {
-  color: var(--neon-color);
-  text-shadow: var(--neon-shadow);
 }
 
 /* ----- Corp de la Page ----- */

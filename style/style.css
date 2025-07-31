@@ -70,6 +70,10 @@ ol {
   margin-bottom: 0.5rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 main {
   padding: 100px 20px 50px;
 }
