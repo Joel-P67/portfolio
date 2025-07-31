@@ -11,7 +11,3 @@ footer {
     gap: 1rem;
     flex-wrap: wrap;
 }
-
-.footer-links:hover {
-    text-decoration: underline;
-}
