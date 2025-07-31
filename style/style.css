@@ -110,9 +110,9 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  /* pour éviter l'alignement vertical centré par défaut */
+  /* pas de justify-content : on laisse gérer section par section */
 }
 
 /* ---------------------------
@@ -122,21 +122,21 @@ main {
 /* Introduction */
 .intro-image img {
   width: 250px;
+  flex-shrink: 0;
 }
 
 .intro-text {
-  flex: 1;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 @media (max-width: 550px) {
-  .intro-image {
-    width: 100%;
-    text-align: center;
-  }
 
-  .intro-image img {
-    margin: 0;
-    display: inline-block;
+  .intro-image img,
+  .intro-image {
+    width: 100% !important;
+    flex: none !important;
+    text-align: center;
   }
 }
 
@@ -219,31 +219,27 @@ main {
 --------------------------- */
 
 /* Informations  */
-.cv-info {
-  width: 250px;
-}
-
+.cv-info,
 .cv-text {
-  flex: 1;
+  flex: 1 1 calc((100% - 1.5rem) / 2);
+  min-width: 0;
 }
 
 @media (max-width: 550px) {
-  .cv-info {
-    width: 100%;
-    text-align: center;
-  }
 
+  .cv-info,
   .cv-text {
-    margin: 0;
-    display: inline-block;
+    width: 100% !important;
+    flex: none !important;
+    text-align: center;
   }
 }
 
 /* Compétences */
-/* Grand écran : 50/50 */
 .savoir-faire,
 .savoir-etre {
-  width: 50%;
+  flex: 1 1 calc((100% - 1.5rem) / 2);
+  min-width: 0;
 }
 
 /* Petit écran : 100% */
@@ -251,7 +247,8 @@ main {
 
   .savoir-faire,
   .savoir-etre {
-    width: 100%;
+    width: 100% !important;
+    flex: none !important;
     text-align: center;
   }
 }
