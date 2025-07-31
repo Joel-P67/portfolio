@@ -278,3 +278,36 @@ main {
     text-align: center;
   }
 }
+
+/* Tableaus CV */
+.job-history {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.job-history td {
+  padding: 0.5em 0.75em;
+  vertical-align: top;
+}
+
+/* Responsive : en dessous de 600px, on empile les lignes */
+@media (max-width: 600px) {
+
+  .job-history,
+  .job-history tbody,
+  .job-history tr,
+  .job-history td {
+    display: block;
+    width: 100%;
+  }
+
+  .job-history td {
+    padding: 0.5em 0;
+  }
+
+  .job-history tr {
+    margin-bottom: 1rem;
+    border: 1px solid var(--neon-color);
+  }
+}
