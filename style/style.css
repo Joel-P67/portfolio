@@ -231,6 +231,10 @@ main {
         A propos
 --------------------------- */
 
+.about {
+  margin-bottom: 20px;
+}
+
 .about-image img {
   margin-left: auto;
   margin-right: auto;
