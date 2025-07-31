@@ -279,7 +279,7 @@ main {
   }
 }
 
-/* Tableaus CV */
+/* Tableau CV */
 .job-history {
   width: 100%;
   border-collapse: collapse;
@@ -291,23 +291,27 @@ main {
   vertical-align: top;
 }
 
-/* Responsive : en dessous de 600px, on empile les lignes */
-@media (max-width: 600px) {
+/* Responsive : en dessous de 700px, les lignes deviennent des blocs verticaux */
+@media (max-width: 700px) {
+  .job-history tr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--neon-color);
+    border-radius: 8px;
+    background-color: #010204;
+    box-shadow: var(--neon-shadow);
+  }
 
-  .job-history,
-  .job-history tbody,
-  .job-history tr,
   .job-history td {
     display: block;
     width: 100%;
+    padding: 0;
   }
 
-  .job-history td {
-    padding: 0.5em 0;
-  }
-
-  .job-history tr {
-    margin-bottom: 1rem;
-    border: 1px solid var(--neon-color);
+  .job-history {
+    border: none;
   }
 }
