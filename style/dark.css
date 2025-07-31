@@ -146,12 +146,10 @@ nav {
 .job-history tr {
   background-color: #010204;
   border-bottom: 1px solid var(--neon-color);
-  box-shadow: var(--neon-shadow);
 }
 
 @media (max-width: 700px) {
   .job-history tr {
-    background-color: #010204;
     border: 1px solid var(--neon-color);
     box-shadow: var(--neon-shadow);
   }

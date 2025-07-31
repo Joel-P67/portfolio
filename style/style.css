@@ -286,6 +286,10 @@ main {
   margin-bottom: 2rem;
 }
 
+.job-history tr:last-child {
+  border-bottom: none;
+}
+
 .job-history td {
   padding: 0.5rem 0.75rem;
   vertical-align: top;
