@@ -286,8 +286,15 @@ main {
   margin-bottom: 2rem;
 }
 
+.job-history tr {
+  border: 1px solid var(--neon-color);
+  border-radius: 8px;
+  background-color: #010204;
+  box-shadow: var(--neon-shadow);
+}
+
 .job-history td {
-  padding: 0.5em 0.75em;
+  padding: 0.5rem 0.75rem;
   vertical-align: top;
 }
 
@@ -299,10 +306,6 @@ main {
     gap: 0.25rem;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    border: 1px solid var(--neon-color);
-    border-radius: 8px;
-    background-color: #010204;
-    box-shadow: var(--neon-shadow);
   }
 
   .job-history td {
