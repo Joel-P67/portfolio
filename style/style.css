@@ -120,24 +120,28 @@ main {
 
 /* Introduction */
 .intro-image {
-  flex: 0 0 250px;
+  flex: 0 0 calc(25% - 0.75rem);
+  /* 25% - moitié du gap */
 }
 
+.intro-text {
+  flex: 0 0 calc(75% - 0.75rem);
+  /* 75% - moitié du gap */
+  min-width: 0;
+}
+
+/* Image */
 .intro-image img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.intro-text {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
+/* Responsive */
 @media (max-width: 550px) {
 
-  .intro-image img,
-  .intro-image {
+  .intro-image,
+  .intro-text {
     width: 100% !important;
     flex: none !important;
     text-align: center;
@@ -211,11 +215,11 @@ main {
   border-radius: 8px;
   font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   word-break: break-word;
   text-align: center;
   box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* ---------------------------
