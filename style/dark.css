@@ -132,6 +132,6 @@ footer {
   border-top: 1px solid var(--neon-color);
 }
 
-.footer-links a {
+.footer-links {
   color: var(--neon-color);
 }

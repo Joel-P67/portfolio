@@ -12,10 +12,6 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer-links a {
-    text-decoration: none;
-}
-
-.footer-links a:hover {
+.footer-links:hover {
     text-decoration: underline;
 }
