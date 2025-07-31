@@ -95,6 +95,7 @@ main {
   z-index: 2;
 }
 
+/* Règle générale pour toutes les images dans une section */
 .section img {
   max-width: 100%;
   height: auto;
@@ -111,8 +112,6 @@ main {
   flex-wrap: wrap;
   gap: 1.5rem;
   align-items: flex-start;
-  /* pour éviter l'alignement vertical centré par défaut */
-  /* pas de justify-content : on laisse gérer section par section */
 }
 
 /* ---------------------------
@@ -120,9 +119,14 @@ main {
 --------------------------- */
 
 /* Introduction */
+.intro-image {
+  flex: 0 0 250px;
+}
+
 .intro-image img {
-  width: 250px;
-  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .intro-text {
