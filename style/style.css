@@ -231,8 +231,9 @@ main {
         A propos
 --------------------------- */
 
-.about-image img {
-  margin: 0 auto;
+.about-image {
+  display: flex;
+  justify-content: center;
 }
 
 /* ---------------------------
