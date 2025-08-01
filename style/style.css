@@ -290,6 +290,10 @@ main {
   border-bottom: none;
 }
 
+.job-history td:first-child {
+  white-space: nowrap;
+}
+
 .job-history td {
   padding: 0.5rem 0.75rem;
   vertical-align: top;
