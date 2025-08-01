@@ -156,14 +156,14 @@ nav {
 }
 
 /* Bouton de telechargement du CV */
-#download-pdf {
+#download-cv {
   background-color: rgba(0, 0, 0, 0.6);
   color: #eee;
   border: 1px solid var(--neon-color);
   box-shadow: var(--neon-shadow);
 }
 
-#download-pdf:hover {
+#download-cv:hover {
   background-color: #010204;
   color: var(--neon-color);
   box-shadow:
