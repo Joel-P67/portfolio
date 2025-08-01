@@ -334,12 +334,20 @@ main {
 }
 
 @media print {
+
+  .no-print,
+  header,
+  footer {
+    display: none !important;
+  }
+
   @page {
     size: A4;
     margin: 1cm;
   }
 
-  .no-print {
-    display: none !important;
+  body {
+    background-color: #010204;
+    color: #eee;
   }
 }
