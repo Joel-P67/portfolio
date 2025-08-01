@@ -130,7 +130,7 @@ nav {
 
 .project-hover-links .btn-project:hover {
   background-color: #010204;
-  background-color: var(--neon-color);
+  color: var(--neon-color);
   box-shadow:
     0 0 5px var(--neon-color),
     0 0 10px var(--neon-color),
@@ -165,7 +165,7 @@ nav {
 
 #download-pdf:hover {
   background-color: #010204;
-  background-color: var(--neon-color);
+  color: var(--neon-color);
   box-shadow:
     0 0 5px var(--neon-color),
     0 0 10px var(--neon-color),
