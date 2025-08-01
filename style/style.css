@@ -334,6 +334,11 @@ main {
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
+
   .no-print {
     display: none !important;
   }
