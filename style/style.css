@@ -24,6 +24,10 @@ nav,
     border-color 0.3s ease;
 }
 
+main {
+  padding: 100px 20px 50px;
+}
+
 /* Utiliser Neonderthaw uniquement pour les titres */
 h1,
 h2,
@@ -73,10 +77,6 @@ ol {
 a {
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-main {
-  padding: 100px 20px 50px;
 }
 
 /* Section : largeur limitée + centrée */
@@ -335,19 +335,27 @@ main {
 
 @media print {
 
+  body {
+    background-color: #010204;
+    color: #eee;
+  }
+
   .no-print,
   header,
-  footer {
+  footer,
+  nav {
     display: none !important;
   }
+
+  main {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+
 
   @page {
     size: A4;
     margin: 1cm;
-  }
-
-  body {
-    background-color: #010204;
-    color: #eee;
   }
 }
