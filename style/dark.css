@@ -130,7 +130,7 @@ nav {
 
 .project-hover-links .btn-project:hover {
   background-color: #010204;
-  color: #eee;
+  background-color: var(--neon-color);
   box-shadow:
     0 0 5px var(--neon-color),
     0 0 10px var(--neon-color),
@@ -153,6 +153,24 @@ nav {
     border: 1px solid var(--neon-color);
     box-shadow: var(--neon-shadow);
   }
+}
+
+/* Bouton de telechargement du CV */
+#download-pdf {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #eee;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+}
+
+#download-pdf:hover {
+  background-color: #010204;
+  background-color: var(--neon-color);
+  box-shadow:
+    0 0 5px var(--neon-color),
+    0 0 10px var(--neon-color),
+    0 0 15px var(--neon-color),
+    0 0 20px var(--neon-color);
 }
 
 /* ---------------------------
