@@ -65,4 +65,8 @@
   .job-history tr:last-child {
     border-bottom: none;
   }
+
+  .page-break {
+    page-break-before: always;
+  }
 }
