@@ -23,13 +23,15 @@
     box-sizing: border-box;
   }
 
-  h1,
-  h2,
-  h3,
-  .section-title {
-    page-break-after: avoid;
-    page-break-inside: avoid;
+  .page-break {
+    page-break-before: always;
+    margin-top: 2cm;
   }
+
+  .nowrap {
+    white-space: nowrap;
+  }
+
 
   .section {
     width: 100%;
@@ -64,9 +66,5 @@
 
   .job-history tr:last-child {
     border-bottom: none;
-  }
-
-  .page-break {
-    page-break-before: always;
   }
 }
