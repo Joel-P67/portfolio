@@ -155,6 +155,24 @@ nav {
   }
 }
 
+/* Bouton de telechargement du CV */
+#download-cv {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #eee;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+}
+
+#download-cv:hover {
+  background-color: #010204;
+  color: var(--neon-color);
+  box-shadow:
+    0 0 5px var(--neon-color),
+    0 0 10px var(--neon-color),
+    0 0 15px var(--neon-color),
+    0 0 20px var(--neon-color);
+}
+
 /* ---------------------------
         Footer
 --------------------------- */
@@ -167,4 +185,42 @@ footer {
 
 .footer-links a {
   color: var(--neon-color);
+}
+
+/* ---------------------------
+        CV print
+--------------------------- */
+
+@media print {
+  body {
+    background-color: #010204;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: var(--neon-color);
+    text-shadow: var(--neon-shadow);
+  }
+
+  a {
+    color: var(--neon-color);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .section {
+    background-color: #010204;
+    border: 1px solid var(--neon-color);
+  }
+
+  .section-title {
+    background-color: #010204;
+    color: var(--neon-color);
+  }
+
+  .job-history tr {
+    background-color: #010204;
+    border-bottom: 1px solid var(--neon-color);
+  }
 }

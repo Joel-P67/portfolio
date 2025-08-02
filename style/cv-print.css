@@ -1,0 +1,68 @@
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+
+  header,
+  footer,
+  #download-cv {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+  }
+
+  main {
+    width: 100%;
+    padding: 1cm;
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  .section-title {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  .section {
+    width: 100%;
+    padding: 1cm 0;
+    margin-bottom: 0.8cm;
+    border-radius: 8px;
+    page-break-inside: avoid;
+  }
+
+  .cv-info,
+  .cv-text,
+  .savoir-faire,
+  .savoir-etre {
+    flex: 1 1 calc((100% - 1.5rem) / 2);
+    min-width: 0;
+  }
+
+  .job-history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+
+  .job-history td {
+    padding: 0.5rem 0.75rem;
+    vertical-align: top;
+  }
+
+  .job-history td:first-child {
+    white-space: nowrap;
+  }
+
+  .job-history tr:last-child {
+    border-bottom: none;
+  }
+}

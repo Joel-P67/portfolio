@@ -29,11 +29,20 @@
   <title>Joël Petrazoller</title>
 
   <!-- CSS -->
+  <!-- CSS structurelle commune -->
   <link rel="stylesheet" href="/portfolio/style/header.css" />
   <link rel="stylesheet" href="/portfolio/style/style.css" />
   <link rel="stylesheet" href="/portfolio/style/footer.css" />
+
+  <!-- CSS print (structure impression) -->
+  <link rel="stylesheet" href="/portfolio/style/cv-print.css" media="print" />
+
+  <!-- CSS thème sombre (chargé par défaut) -->
   <link id="themeStylesheet" rel="stylesheet" href="/portfolio/style/dark.css" />
-  <link rel="stylesheet" href="/portfolio/style/light.css" id="lightStylesheet" disabled />
+
+  <!-- CSS thème clair (désactivé par défaut) -->
+  <link id="lightStylesheet" rel="stylesheet" href="/portfolio/style/light.css" disabled />
+
 
 </head>
 
@@ -191,12 +200,21 @@
       <p>Séries, animes, jeux de stratégie en ligne, créations web.</p>
     </section>
 
+    <!-- Bouton de téléchargement CV -->
+    <button id="download-cv" class="no-print">Télécharger en PDF</button>
+
   </main>
 
   <!-- Header -->
   <script src="/portfolio/script/header.js" defer></script>
   <!-- Footer -->
   <script src="/portfolio/script/footer.js" defer></script>
+  <!-- CV PDF -->
+  <script>
+    document.getElementById("download-cv").addEventListener("click", () => {
+      window.print();
+    });
+  </script>
 
 </body>
 
