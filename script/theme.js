@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lightStylesheet.disabled = !isLight;
     themeStylesheet.disabled = isLight;
 
-    // Met à jour le texte du bouton
+    // Met à jour le texte du bouton SEULEMENT
     themeButton.textContent = isLight ? 'Clair' : 'Sombre';
 
     // Sauvegarde le thème
