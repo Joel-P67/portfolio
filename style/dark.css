@@ -219,6 +219,51 @@ nav {
 }
 
 /* ---------------------------
+        Contact
+--------------------------- */
+
+.contact-formulaire label {
+  color: var(--neon-color);
+  text-shadow: var(--neon-shadow);
+}
+
+.contact-formulaire input[type="text"],
+.contact-formulaire input[type="email"],
+.contact-formulaire textarea {
+  background-color: #111;
+  color: #eee;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+}
+
+.contact-formulaire input[type="text"]:focus,
+.contact-formulaire input[type="email"]:focus,
+.contact-formulaire textarea:focus {
+  color: var(--neon-color);
+  box-shadow:
+    0 0 5px var(--neon-color),
+    0 0 10px var(--neon-color),
+    0 0 15px var(--neon-color);
+}
+
+.contact-formulaire button {
+  background: rgba(0, 0, 0, 0.6);
+  color: #eee;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+
+}
+
+.contact-formulaire button:hover {
+  background: #010204;
+  color: var(--neon-color);
+  box-shadow:
+    0 0 5px var(--neon-color),
+    0 0 10px var(--neon-color),
+    0 0 15px var(--neon-color);
+}
+
+/* ---------------------------
         Footer
 --------------------------- */
 
