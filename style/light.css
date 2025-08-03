@@ -1,3 +1,290 @@
 /* ---------------------------
         Thème Clair
 --------------------------- */
+
+:root {
+  --accent-color: #0077cc;
+  --accent-shadow:
+    0 0 3px rgba(0, 119, 204, 0.3),
+    0 0 6px rgba(0, 119, 204, 0.2);
+}
+
+/* ---------------------------
+        Général
+--------------------------- */
+
+body {
+  background-color: #f4f4f9;
+  color: #111;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  text-shadow: var(--accent-shadow);
+}
+
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+.section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  background-color: #f4f4f9;
+  color: var(--accent-color);
+  text-shadow: var(--accent-shadow);
+}
+
+.section img {
+  filter: drop-shadow(0 0 4px #aaa);
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}
+
+.section img:hover {
+  opacity: 1;
+}
+
+/* ---------------------------
+        Header
+--------------------------- */
+
+nav {
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.burger,
+.logo-text {
+  color: var(--accent-color);
+  text-shadow: var(--accent-shadow);
+}
+
+#themeButton {
+  background-color: #fff;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--accent-shadow);
+  color: var(--accent-color);
+  text-shadow: var(--accent-shadow);
+}
+
+.options {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  color: #111;
+}
+
+.option:hover {
+  color: var(--accent-color);
+  text-shadow: var(--accent-shadow);
+}
+
+.menu {
+  background-color: #fefefe;
+  border-bottom: 1px solid #ccc;
+}
+
+/* ---------------------------
+        Index
+--------------------------- */
+
+.skill-block {
+  background-color: #fff;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--accent-shadow);
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--accent-shadow);
+}
+
+.project-hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.project-hover-links .btn-project {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #111;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--accent-shadow);
+}
+
+.project-hover-links .btn-project:hover {
+  background-color: #fff;
+  color: var(--accent-color);
+  box-shadow:
+    0 0 5px var(--accent-color),
+    0 0 10px var(--accent-color),
+    0 0 15px var(--accent-color);
+}
+
+/* ---------------------------
+        CV
+--------------------------- */
+
+.job-history tr {
+  background-color: #fff;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+@media (max-width: 700px) {
+  .job-history tr {
+    border: 1px solid var(--accent-color);
+    box-shadow: var(--accent-shadow);
+  }
+}
+
+#download-cv {
+  background-color: #fff;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--accent-shadow);
+}
+
+#download-cv:hover {
+  background-color: #f0f0f0;
+  box-shadow:
+    0 0 5px var(--accent-color),
+    0 0 10px var(--accent-color),
+    0 0 15px var(--accent-color);
+}
+
+/* Modal popup */
+.modal {
+  background: rgba(244, 244, 249, 0.9);
+}
+
+.modal-content {
+  background: #fff;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--accent-shadow);
+  color: #111;
+}
+
+.modal-content strong {
+  color: var(--accent-color);
+}
+
+.modal-content button {
+  background: #f0f0f0;
+  color: #111;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--accent-shadow);
+}
+
+.modal-content button:hover {
+  background: #fff;
+  color: var(--accent-color);
+  box-shadow:
+    0 0 5px var(--accent-color),
+    0 0 10px var(--accent-color),
+    0 0 15px var(--accent-color);
+}
+
+/* ---------------------------
+        Contact
+--------------------------- */
+
+.contact-formulaire label {
+  color: var(--accent-color);
+  text-shadow: var(--accent-shadow);
+}
+
+.contact-formulaire input[type="text"],
+.contact-formulaire input[type="email"],
+.contact-formulaire textarea {
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+  box-shadow: var(--accent-shadow);
+}
+
+.contact-formulaire input[type="text"]:focus,
+.contact-formulaire input[type="email"]:focus,
+.contact-formulaire textarea:focus {
+  color: var(--accent-color);
+  box-shadow:
+    0 0 5px var(--accent-color),
+    0 0 10px var(--accent-color),
+    0 0 15px var(--accent-color);
+}
+
+.contact-formulaire button {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  box-shadow: var(--accent-shadow);
+}
+
+.contact-formulaire button:hover {
+  background: #005fa3;
+}
+
+/* ---------------------------
+        Footer
+--------------------------- */
+
+footer {
+  background-color: #f0f0f0;
+  color: #333;
+  border-top: 1px solid #ccc;
+}
+
+.footer-links a {
+  color: var(--accent-color);
+}
+
+/* ---------------------------
+        CV print
+--------------------------- */
+
+@media print {
+  body {
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #333;
+    text-shadow: none;
+  }
+
+  a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+
+  .section-title {
+    background-color: #f4f4f9;
+    color: var(--accent-color);
+  }
+
+  .job-history tr {
+    background-color: #fff;
+    border-bottom: 1px solid var(--accent-color);
+  }
+}
