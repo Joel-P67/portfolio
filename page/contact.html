@@ -76,12 +76,9 @@
 
     <section class="section">
       <h2 class="section-title">Formulaire de contact</h2>
-      <form class="contact-formulaire" action="https://formsubmit.co/0762dfc8fb0c97b16d98cfcefed951fd" method="POST">
+      <form class="contact-formulaire" action="https://formspree.io/f/xldlwznw" method="POST">
         <!-- Honeypot anti-spam (champ caché) -->
         <input type="text" name="_honey" style="display:none">
-
-        <!-- Empêche la redirection vers Formsubmit après envoi -->
-        <input type="hidden" name="_redirect" value="https://joel-p67.github.io/portfolio/">
 
         <!-- Optionnel : personnaliser l’objet du mail -->
         <input type="hidden" name="_subject" value="Nouveau message depuis mon portfolio">
@@ -101,23 +98,19 @@
 
   </main>
 
+  <div id="form-modal" class="modal hidden">
+    <div class="modal-content">
+      <p id="form-modal-message"></p>
+      <button id="form-modal-close">Fermer</button>
+    </div>
+  </div>
+
   <!-- Header -->
   <script src="/portfolio/script/header.js" defer></script>
   <!-- Footer -->
   <script src="/portfolio/script/footer.js" defer></script>
   <!-- Message de redirection -->
-  <script>
-    if (window.location.search.includes('sent=ok')) {
-      const confirmation = document.createElement('p');
-      confirmation.textContent = "Merci, votre message a bien été envoyé !";
-      confirmation.style.color = "#0ff";
-      document.querySelector('.contact-formulaire').prepend(confirmation);
-
-      const url = new URL(window.location);
-      url.searchParams.delete('sent');
-      window.history.replaceState({}, document.title, url.pathname);
-    }
-  </script>
+  <script src="/portfolio/script/contact.js" defer></script>
 
 </body>
 
