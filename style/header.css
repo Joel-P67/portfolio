@@ -95,6 +95,10 @@ nav {
   cursor: pointer;
 }
 
+.options.show {
+  display: block;
+}
+
 /* Menu de navigation */
 .menu {
   width: 100%;
