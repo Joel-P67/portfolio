@@ -378,6 +378,7 @@ a {
 }
 
 .contact-formulaire label {
+  font-family: "Neonderthaw", cursive;
   display: block;
   margin-top: 1.2rem;
   margin-bottom: 0.4rem;
@@ -402,7 +403,8 @@ a {
 }
 
 .contact-formulaire button {
-  margin-top: 1.5rem;
+  display: block;
+  margin: 1.5rem auto 0 auto;
   font-weight: 700;
   border: none;
   padding: 0.8rem 1.6rem;
