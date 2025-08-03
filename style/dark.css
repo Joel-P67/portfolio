@@ -173,6 +173,51 @@ nav {
     0 0 20px var(--neon-color);
 }
 
+/* Modal popup */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 2, 4, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #010204;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+  color: #eee;
+}
+
+.modal-content strong {
+  color: var(--neon-color);
+}
+
+.modal-content button {
+  background: rgba(0, 0, 0, 0.6);
+  color: #eee;
+  border: 1px solid var(--neon-color);
+  box-shadow: var(--neon-shadow);
+}
+
+.modal-content button:hover {
+  background: #010204;
+  color: var(--neon-color);
+  box-shadow:
+    0 0 5px var(--neon-color),
+    0 0 10px var(--neon-color),
+    0 0 15px var(--neon-color);
+}
+
 /* ---------------------------
         Footer
 --------------------------- */

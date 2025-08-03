@@ -332,3 +332,36 @@ a {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
+/* Modal popup */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.modal-content button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}

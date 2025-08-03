@@ -200,8 +200,15 @@
       <p>Séries, animes, jeux de stratégie en ligne, créations web.</p>
     </section>
 
-    <!-- Bouton de téléchargement CV -->
-    <button id="download-cv" class="no-print">Télécharger en PDF</button>
+    <!-- Bouton Imprimer / Télécharger PDF -->
+    <button id="download-cv" class="no-print">Imprimer / Télécharger PDF</button>
+    <!-- Fenêtre popup personnalisée -->
+    <div id="print-modal" class="modal hidden">
+      <div class="modal-content">
+        <p>Pour une impression optimale,<br>assurez-vous que l’échelle est réglée à <strong>100%</strong>.</p>
+        <button id="confirm-print">Confirmer</button>
+      </div>
+    </div>
 
   </main>
 
@@ -209,12 +216,8 @@
   <script src="/portfolio/script/header.js" defer></script>
   <!-- Footer -->
   <script src="/portfolio/script/footer.js" defer></script>
-  <!-- CV PDF -->
-  <script>
-    document.getElementById("download-cv").addEventListener("click", () => {
-      window.print();
-    });
-  </script>
+  <!-- Bouton Imprimer / Télécharger PDF -->
+  <script src="/portfolio/script/cv-print.js" defer></script>
 
 </body>
 
