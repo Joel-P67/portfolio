@@ -40,7 +40,7 @@ a:hover {
 .section {
   background-color: #fff;
   border: 1px solid var(--accent-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--accent-shadow);
 }
 
 .section-title {
@@ -65,7 +65,7 @@ a:hover {
 
 nav {
   border-bottom: 1px solid var(--accent-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--accent-shadow);
 }
 
 .burger,
