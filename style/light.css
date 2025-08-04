@@ -53,8 +53,8 @@ a:hover {
 }
 
 .section img {
-  filter: drop-shadow(0 0 4px #000);
-  opacity: 0.9;
+  filter: drop-shadow(0 0 2px rgba(100, 150, 200, 0.3)) drop-shadow(0 0 6px rgba(100, 150, 200, 0.2));
+  opacity: 0.95;
   transition: opacity 0.3s ease;
 }
 
