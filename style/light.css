@@ -305,3 +305,10 @@ footer {
     border-bottom: 1px solid var(--accent-color);
   }
 }
+
+/* Désactive le mode sombre automatique */
+@media (prefers-color-scheme: dark) {
+  .burger {
+    color: var(--accent-color);
+  }
+}

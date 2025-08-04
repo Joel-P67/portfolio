@@ -305,3 +305,9 @@ footer {
     border-bottom: 1px solid var(--neon-color);
   }
 }
+
+@media (prefers-color-scheme: light) {
+  .burger {
+    color: var(--neon-color);
+  }
+}
