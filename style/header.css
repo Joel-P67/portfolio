@@ -80,6 +80,8 @@ nav {
   background-color: transparent;
   border-radius: 6px;
   cursor: pointer;
+  width: 5.5rem;
+  text-align: center;
 }
 
 .options {
