@@ -16,7 +16,7 @@
 --------------------------- */
 
 body {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   color: #010204;
 }
 
@@ -40,14 +40,14 @@ a:hover {
 }
 
 .section {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
 /* Titre posé sur la ligne */
 .section-title {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   color: var(--accent-color);
   text-shadow: var(--accent-shadow);
 }
@@ -78,7 +78,7 @@ nav {
 }
 
 #themeButton {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
   color: var(--accent-color);
@@ -86,7 +86,7 @@ nav {
 }
 
 .options {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
   color: #010204;
@@ -99,7 +99,7 @@ nav {
 
 /* Menu */
 .menu {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   border-bottom: 1px solid #ccc;
 }
 
@@ -109,14 +109,14 @@ nav {
 
 /* Compétences techniques */
 .skill-block {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
 /* Mes Projets */
 .project-card {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
@@ -133,7 +133,7 @@ nav {
 }
 
 .project-hover-links .btn-project:hover {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   color: var(--accent-color);
   box-shadow:
     0 0 5px var(--accent-color),
@@ -148,7 +148,7 @@ nav {
 
 /* Tableau CV */
 .job-history tr {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   border-bottom: 1px solid var(--accent-color);
 }
 
@@ -168,7 +168,7 @@ nav {
 }
 
 #download-cv:hover {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   color: var(--accent-color);
   box-shadow:
     0 0 5px var(--accent-color),
@@ -259,7 +259,7 @@ nav {
 --------------------------- */
 
 footer {
-  background-color: #9cafbd;
+  background-color: #dbe7f1;
   color: #010204;
   border-top: 1px solid var(--accent-color);
 }
@@ -274,7 +274,7 @@ footer {
 
 @media print {
   body {
-    background-color: #9cafbd;
+    background-color: #dbe7f1;
   }
 
   h1,
@@ -291,17 +291,17 @@ footer {
   }
 
   .section {
-    background-color: #9cafbd;
+    background-color: #dbe7f1;
     border: 1px solid var(--accent-color);
   }
 
   .section-title {
-    background-color: #9cafbd;
+    background-color: #dbe7f1;
     color: var(--accent-color);
   }
 
   .job-history tr {
-    background-color: #9cafbd;
+    background-color: #dbe7f1;
     border-bottom: 1px solid var(--accent-color);
   }
 }
