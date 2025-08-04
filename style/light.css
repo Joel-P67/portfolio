@@ -122,11 +122,11 @@ nav {
 }
 
 .project-hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(219, 231, 241, 0.9);
 }
 
 .project-hover-links .btn-project {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(219, 231, 241, 0.75);
   color: #010204;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
@@ -161,7 +161,7 @@ nav {
 
 /* Bouton de telechargement du CV */
 #download-cv {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(219, 231, 241, 0.9);
   color: #010204;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
@@ -179,11 +179,11 @@ nav {
 
 /* Modal popup */
 .modal {
-  background: rgba(1, 2, 4, 0.9);
+  background: rgba(219, 231, 241, 0.9);
 }
 
 .modal-content {
-  background: #010204;
+  background: #dbe7f1;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
   color: #010204;
@@ -194,14 +194,14 @@ nav {
 }
 
 .modal-content button {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(219, 231, 241, 0.9);
   color: #010204;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
 .modal-content button:hover {
-  background: #010204;
+  background: #dbe7f1;
   color: var(--accent-color);
   box-shadow:
     0 0 5px var(--accent-color),
@@ -221,7 +221,7 @@ nav {
 .contact-formulaire input[type="text"],
 .contact-formulaire input[type="email"],
 .contact-formulaire textarea {
-  background-color: #111;
+  background-color: #dbe7f1;
   color: #010204;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
@@ -238,7 +238,7 @@ nav {
 }
 
 .contact-formulaire button {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(219, 231, 241, 0.9);
   color: #010204;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
@@ -246,7 +246,7 @@ nav {
 }
 
 .contact-formulaire button:hover {
-  background: #010204;
+  background: #dbe7f1;
   color: var(--accent-color);
   box-shadow:
     0 0 5px var(--accent-color),
