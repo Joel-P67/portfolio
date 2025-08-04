@@ -5,8 +5,10 @@
 :root {
   --accent-color: #0077cc;
   --accent-shadow:
-    0 0 3px rgba(0, 119, 204, 0.3),
-    0 0 6px rgba(0, 119, 204, 0.2);
+    0 0 1px var(--accent-color),
+    0 0 2px var(--accent-color),
+    0 0 4px var(--accent-color),
+    0 0 6px var(--accent-color);
 }
 
 /* ---------------------------
@@ -14,8 +16,8 @@
 --------------------------- */
 
 body {
-  background-color: #f4f4f9;
-  color: #111;
+  background-color: #eef3f9;
+  color: #010204;
 }
 
 h1,
@@ -24,34 +26,35 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
+  color: var(--accent-color);
   text-shadow: var(--accent-shadow);
 }
 
 a {
-  color: var(--accent-color);
+  color: #010204;
 }
 
 a:hover {
-  color: #005fa3;
-  text-decoration: underline;
+  color: var(--accent-color);
+  text-shadow: var(--accent-shadow);
 }
 
 .section {
-  background-color: #fff;
+  background-color: #eef3f9;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
+/* Titre posé sur la ligne */
 .section-title {
-  background-color: #f4f4f9;
+  background-color: #eef3f9;
   color: var(--accent-color);
   text-shadow: var(--accent-shadow);
 }
 
 .section img {
-  filter: drop-shadow(0 0 4px #aaa);
-  opacity: 0.95;
+  filter: drop-shadow(0 0 4px #000);
+  opacity: 0.9;
   transition: opacity 0.3s ease;
 }
 
@@ -64,7 +67,7 @@ a:hover {
 --------------------------- */
 
 nav {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--neon-color);
   box-shadow: var(--accent-shadow);
 }
 
@@ -75,7 +78,7 @@ nav {
 }
 
 #themeButton {
-  background-color: #fff;
+  background-color: #eef3f9;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
   color: var(--accent-color);
@@ -83,10 +86,10 @@ nav {
 }
 
 .options {
-  background-color: #fff;
+  background-color: #eef3f9;
   border: 1px solid var(--accent-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  color: #111;
+  box-shadow: var(--accent-shadow);
+  color: #010204;
 }
 
 .option:hover {
@@ -94,8 +97,9 @@ nav {
   text-shadow: var(--accent-shadow);
 }
 
+/* Menu */
 .menu {
-  background-color: #fefefe;
+  background-color: #eef3f9;
   border-bottom: 1px solid #ccc;
 }
 
@@ -103,45 +107,49 @@ nav {
         Index
 --------------------------- */
 
+/* Compétences techniques */
 .skill-block {
-  background-color: #fff;
+  background-color: #eef3f9;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
+/* Mes Projets */
 .project-card {
-  background-color: #fff;
+  background-color: #eef3f9;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
 .project-hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .project-hover-links .btn-project {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #111;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #010204;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
 .project-hover-links .btn-project:hover {
-  background-color: #fff;
+  background-color: #eef3f9;
   color: var(--accent-color);
   box-shadow:
     0 0 5px var(--accent-color),
     0 0 10px var(--accent-color),
-    0 0 15px var(--accent-color);
+    0 0 15px var(--accent-color),
+    0 0 20px var(--accent-color);
 }
 
 /* ---------------------------
         CV
 --------------------------- */
 
+/* Tableau CV */
 .job-history tr {
-  background-color: #fff;
-  border-bottom: 1px solid var(--accent-color);
+  background-color: #eef3f9;
+  border-bottom: 1px solid var(--neon-color);
 }
 
 @media (max-width: 700px) {
@@ -151,31 +159,34 @@ nav {
   }
 }
 
+/* Bouton de telechargement du CV */
 #download-cv {
-  background-color: #fff;
-  color: var(--accent-color);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #010204;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
 #download-cv:hover {
-  background-color: #f0f0f0;
+  background-color: #eef3f9;
+  color: var(--accent-color);
   box-shadow:
     0 0 5px var(--accent-color),
     0 0 10px var(--accent-color),
-    0 0 15px var(--accent-color);
+    0 0 15px var(--accent-color),
+    0 0 20px var(--accent-color);
 }
 
 /* Modal popup */
 .modal {
-  background: rgba(244, 244, 249, 0.9);
+  background: rgba(1, 2, 4, 0.9);
 }
 
 .modal-content {
-  background: #fff;
+  background: #010204;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
-  color: #111;
+  color: #010204;
 }
 
 .modal-content strong {
@@ -183,19 +194,19 @@ nav {
 }
 
 .modal-content button {
-  background: #f0f0f0;
-  color: #111;
+  background: rgba(0, 0, 0, 0.6);
+  color: #010204;
   border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
 .modal-content button:hover {
-  background: #fff;
+  background: #010204;
   color: var(--accent-color);
   box-shadow:
-    0 0 5px var(--accent-color),
-    0 0 10px var(--accent-color),
-    0 0 15px var(--accent-color);
+    0 0 5px var(--neon-color),
+    0 0 10px var(--neon-color),
+    0 0 15px var(--neon-color);
 }
 
 /* ---------------------------
@@ -210,9 +221,9 @@ nav {
 .contact-formulaire input[type="text"],
 .contact-formulaire input[type="email"],
 .contact-formulaire textarea {
-  background-color: #fff;
-  color: #111;
-  border: 1px solid #ccc;
+  background-color: #111;
+  color: #010204;
+  border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
@@ -221,20 +232,26 @@ nav {
 .contact-formulaire textarea:focus {
   color: var(--accent-color);
   box-shadow:
-    0 0 5px var(--accent-color),
-    0 0 10px var(--accent-color),
-    0 0 15px var(--accent-color);
+    0 0 5px var(--neon-color),
+    0 0 10px var(--neon-color),
+    0 0 15px var(--neon-color);
 }
 
 .contact-formulaire button {
-  background: var(--accent-color);
-  color: #fff;
-  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #010204;
+  border: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
+
 }
 
 .contact-formulaire button:hover {
-  background: #005fa3;
+  background: #010204;
+  color: var(--accent-color);
+  box-shadow:
+    0 0 5px var(--neon-color),
+    0 0 10px var(--neon-color),
+    0 0 15px var(--neon-color);
 }
 
 /* ---------------------------
@@ -242,9 +259,9 @@ nav {
 --------------------------- */
 
 footer {
-  background-color: #f0f0f0;
-  color: #333;
-  border-top: 1px solid #ccc;
+  background-color: #eef3f9;
+  color: #ccc;
+  border-top: 1px solid var(--neon-color);
 }
 
 .footer-links a {
@@ -257,14 +274,14 @@ footer {
 
 @media print {
   body {
-    background-color: #fff;
+    background-color: #eef3f9;
   }
 
   h1,
   h2,
   h3 {
-    color: #333;
-    text-shadow: none;
+    color: var(--accent-color);
+    text-shadow: var(--accent-shadow);
   }
 
   a {
@@ -274,17 +291,17 @@ footer {
   }
 
   .section {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #eef3f9;
+    border: 1px solid var(--accent-color);
   }
 
   .section-title {
-    background-color: #f4f4f9;
+    background-color: #eef3f9;
     color: var(--accent-color);
   }
 
   .job-history tr {
-    background-color: #fff;
-    border-bottom: 1px solid var(--accent-color);
+    background-color: #eef3f9;
+    border-bottom: 1px solid var(--neon-color);
   }
 }
