@@ -67,7 +67,7 @@ a:hover {
 --------------------------- */
 
 nav {
-  border-bottom: 1px solid var(--neon-color);
+  border-bottom: 1px solid var(--accent-color);
   box-shadow: var(--accent-shadow);
 }
 
@@ -149,7 +149,7 @@ nav {
 /* Tableau CV */
 .job-history tr {
   background-color: #eef3f9;
-  border-bottom: 1px solid var(--neon-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 @media (max-width: 700px) {
@@ -204,9 +204,9 @@ nav {
   background: #010204;
   color: var(--accent-color);
   box-shadow:
-    0 0 5px var(--neon-color),
-    0 0 10px var(--neon-color),
-    0 0 15px var(--neon-color);
+    0 0 5px var(--accent-color),
+    0 0 10px var(--accent-color),
+    0 0 15px var(--accent-color);
 }
 
 /* ---------------------------
@@ -232,9 +232,9 @@ nav {
 .contact-formulaire textarea:focus {
   color: var(--accent-color);
   box-shadow:
-    0 0 5px var(--neon-color),
-    0 0 10px var(--neon-color),
-    0 0 15px var(--neon-color);
+    0 0 5px var(--accent-color),
+    0 0 10px var(--accent-color),
+    0 0 15px var(--accent-color);
 }
 
 .contact-formulaire button {
@@ -249,9 +249,9 @@ nav {
   background: #010204;
   color: var(--accent-color);
   box-shadow:
-    0 0 5px var(--neon-color),
-    0 0 10px var(--neon-color),
-    0 0 15px var(--neon-color);
+    0 0 5px var(--accent-color),
+    0 0 10px var(--accent-color),
+    0 0 15px var(--accent-color);
 }
 
 /* ---------------------------
@@ -261,7 +261,7 @@ nav {
 footer {
   background-color: #eef3f9;
   color: #ccc;
-  border-top: 1px solid var(--neon-color);
+  border-top: 1px solid var(--accent-color);
 }
 
 .footer-links a {
@@ -302,6 +302,6 @@ footer {
 
   .job-history tr {
     background-color: #eef3f9;
-    border-bottom: 1px solid var(--neon-color);
+    border-bottom: 1px solid var(--accent-color);
   }
 }
