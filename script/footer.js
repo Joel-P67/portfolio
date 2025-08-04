@@ -1,4 +1,7 @@
-// Injecte le footer à la fin du body
+// ---------------------------
+//     Footer
+// ---------------------------
+
 fetch('/portfolio/commun/footer.html')
   .then(response => response.text())
   .then(data => {

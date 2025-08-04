@@ -1,3 +1,7 @@
+// -----------------------------------------
+//  Bouton d'impression / téléchargement CV
+// -----------------------------------------
+
 const modal = document.getElementById('print-modal');
 const confirmBtn = document.getElementById('confirm-print');
 const triggerBtn = document.getElementById('download-cv');

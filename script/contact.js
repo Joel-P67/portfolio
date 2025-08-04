@@ -1,3 +1,7 @@
+// -----------------------------------------
+//  Gestion de l'envoie du message
+// -----------------------------------------
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".contact-formulaire");
   const modal = document.getElementById("form-modal");
@@ -49,4 +53,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-

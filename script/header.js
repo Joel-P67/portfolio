@@ -1,4 +1,7 @@
-// Injecte le header
+// ---------------------------
+//     Header
+// ---------------------------
+
 fetch('/portfolio/commun/header.html')
   .then(response => response.text())
   .then(data => {
@@ -13,7 +16,10 @@ fetch('/portfolio/commun/header.html')
       menu.classList.toggle('active');
     });
 
-    // Gestion du Thème
+    // ---------------------------
+    //     Gestion du Thème
+    // ---------------------------
+
     const themeStylesheet = document.getElementById('themeStylesheet');
     const lightStylesheet = document.getElementById('lightStylesheet');
     const themeButton = document.getElementById('themeButton');
